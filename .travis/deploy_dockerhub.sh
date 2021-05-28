@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -f Dockerfile -t  alpine-img:$TAG .
-docker push alpine-img
+docker build -f Dockerfile -t alpine-img:latest $DOCKER_USER/alphine:latest .
+docker push $DOCKER_USER/alphine:latest
