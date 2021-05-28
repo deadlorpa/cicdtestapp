@@ -1,25 +1,25 @@
 import random
 
-items = ['шмоток укропа', '22 картошки', 'помидор', 'яйцо', 'тесто', 'кетчуп', 'лист салата', 'майонез', 'дрова']
-actions = ['замешать', 'запечь', 'украсть', 'уничтожить', 'пожарить на медленном огне', 'изучить', 'сварить']
+items = ['cabbage', '22 potato', 'tomato', 'egg', 'gym', 'ketchup', 'salat', 'cream', 'meat']
+actions = ['bake', 'boil', 'kill', 'steal', 'research', 'take care of ']
 
 
-def sample(array, n=1): # получение n айтемов из передаваемого array
+def sample(array, n=1):
     result = random.sample(array, n)
     if n == 1:
         return result[0]
     return result
 
 
-def get_random_items_and_actions(n=4): # получение списков с ингридиентами и действиями длины n
+def get_random_items_and_actions(n=4):
     return sample(items, n), sample(actions, n)
 
 
 def get_recepie(its, acts):
-    recepie = 'Рецепт:\n'
+    recepie = 'Recepie:\n'
     for i in range(0, len(its)):
         recepie += str(i+1) + ') ' + acts[i] + ' ' + its[i] + '\n'
-    recepie += 'Готово!'
+    recepie += 'Ready!'
     return recepie
 
 

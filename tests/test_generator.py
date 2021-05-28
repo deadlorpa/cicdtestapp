@@ -20,6 +20,6 @@ def test_sample_multiple_words():
 def test_recepie():
     its = ['item1', 'item2']
     acts = ['act1', 'act2']
-    result_wait = 'Рецепт:\n' + '1) act1 item1\n'+'2) act2 item2\n' + 'Готово!'
+    result_wait = 'Recepie:\n' + '1) act1 item1\n'+'2) act2 item2\n' + 'Ready!'
     result_have = main.get_recepie(its, acts)
     assert result_wait == result_have

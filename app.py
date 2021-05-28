@@ -9,7 +9,7 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 
 @app.route("/")
 def generate_buzz():
-    page = '<html><body><h1>Рецепт дня</h1><h4>'
+    page = '<html><body><h1>Recepie</h1><h4>'
     its, acts = generator.get_random_items_and_actions(5)
     page += generator.get_recepie(its, acts)
     page += '</h4></body></html>'
