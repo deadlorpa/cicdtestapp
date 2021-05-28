@@ -6,4 +6,4 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 docker build -f Dockerfile -t  alpine-img:$TAG .
-docker push alphine-img
+docker push alpine-img
