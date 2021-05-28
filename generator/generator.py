@@ -1,7 +1,7 @@
 import random
 
 items = ['cabbage', '22 potato', 'tomato', 'egg', 'gym', 'ketchup', 'salat', 'cream', 'meat']
-actions = ['bake', 'boil', 'kill', 'steal', 'research', 'take care of ']
+actions = ['bake', 'boil', 'kill', 'steal', 'research', 'take care of ', 'paper ']
 
 
 def sample(array, n=1):
