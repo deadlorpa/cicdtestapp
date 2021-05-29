@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -t testapp:TAG.
+docker build -t testapp:TAG -f dockerfile.
 docker push testapp:TAG
