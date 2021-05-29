@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build tag alphine-img:TAG .
-docker push alphine:TAG
+docker build tag yanchkin/testApp:TAG .
+docker push yanchkin/testApp:TAG
