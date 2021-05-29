@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build tag yanchkin/testApp:TAG .
-docker push yanchkin/testApp:TAG
+docker build -t testApp:TAG -f Dockerfile.
+docker push testApp:TAG
